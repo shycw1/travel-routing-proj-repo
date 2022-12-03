@@ -15,6 +15,8 @@ def main():
     plotmap(city_df)
 
 
+def plot():
+    pass
 
 if __name__ == '__main__':
     main()
