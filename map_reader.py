@@ -15,7 +15,7 @@ def read_tsp(filename):
                 node_coord_start = i
             i = i+1
         print('Problem with {} cities read.'.format(dimension))
-        print("faulty")
+
         f.seek(0)
 
         # Read a data frame out of the file descriptor
