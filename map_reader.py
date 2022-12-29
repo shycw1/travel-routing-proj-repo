@@ -7,6 +7,7 @@ def read_tsp(filename):
         dimension = None
         lines = f.readlines()
         i = 0
+        # a bug happens here
         while not dimension or not node_coord_start:
             line = lines[i]
             if line.startswith('DIMENSION :'):
@@ -15,7 +16,7 @@ def read_tsp(filename):
                 node_coord_start = i
             i = i+1
         print('Problem with {} cities read.'.format(dimension))
-        print("faulty")
+        
         f.seek(0)
 
         # Read a data frame out of the file descriptor
